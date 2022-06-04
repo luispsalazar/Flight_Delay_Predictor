@@ -24,3 +24,7 @@ Basic description:
 ### Database
 
 Basic description: 
+
+### Resource storage
+
+Google drive link: 
