@@ -1,4 +1,6 @@
 flightdelay_data.csv
+delay_clean.csv
+delay_clean_S2.csv
 
 .DS_Store
 
