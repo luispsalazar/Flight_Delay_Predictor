@@ -1,8 +1,14 @@
-flightdelay_data.csv
 delay_clean.csv
 delay_clean_S2.csv
+flightdelay_data.csv
+flightdelay_nolatlng.csv
+flightPGadmin.csv
+
+config.py
 
 .DS_Store
+
+
 
 
 # Byte-compiled / optimized / DLL files
