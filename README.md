@@ -1,34 +1,54 @@
-TESTING
 # Final project: 
 
-
-## Changing README file to test branch Stephen
-
-## Details 20.1 
+README.md must include:
+✓ Cohesive, structured outline of the project (this may include images, but should
+be easy to follow and digest)
+✓ Link to dashboard (or link to video of dashboard demo)
+✓ Link to Google Slides presentation 
 
 ### Topic and data details
-Selected topic: 
+Data source: https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations
 
-Reason for selected topic:  
+#### Reason for selected topic:
 
-Description of their source of data: 
+Travel delays are inevitable our team wants to look at airline travel data to see how weather influences airline delays greater than 15 minutes to help predict when delays might occur.
 
-Questions the data can answer: 
+#### Description of their source of data: 
+
+This dataset contains detailed airline, weather, airport and employment information for major airports in the US in 2019. 
+
+#### Original columns:
+
+MONTH ------------------------- Month number (1-12 -- Jan. to Dec.)
+DAY_OF_WEEK ------------------- Day of the week (1-7 -- Mon. to Fri.)
+DEP_DEL15 --------------------- Delayed over 15 min (binary - 1 = delay 0 = ontime)
+DEP_TIME_BLK ------------------ Departure time block (59 min segment -- 0001 to 2359)
+DISTANCE_GROUP ---------------- Flight distance flow groups
+SEGMENT_NUMBER ----------------- The segment that this tail number is on for the day
+CONCURRENT_FLIGHTS ------------- Concurrent flights leaving from the airport in the same departure block
+NUMBER_OF_SEATS ---------------- Number of seats on aircraft
+CARRIER_NAME ------------------- Carrier name
+AIRPORT_FLIGHTS_MONTH ---------- Airport flights per month
+AIRLINE_FLIGHTS_MONTH ---------- Airline flights per month
+AIRLINE_AIRPORT_FLIGHTS_MONTH -- Airline specific airport flights per month
+AVG_MONTHLY_PASS_AIRPORT ------- Airport average monthly passangers
+AVG_MONTHLY_PASS_AIRLINE ------- Airline average monthly passangers
+FLT_ATTENDANTS_PER_PASS -------- Flight attendants per passanger
+GROUND_SERV_PER_PASS ----------- Ground service personal per passanger
+PLANE_AGE ---------------------- Plane age
+DEPARTING_AIRPORT -------------- Departing airport 
+LATITUDE ----------------------- Latitude for airport
+LONGITUDE ---------------------- Longitude for airport
+PREVIOUS_AIRPORT --------------- Previous airpoirt ("NONE" if there wasn't one) 
+PRCP --------------------------- Inches of precipitation for day
+SNOW --------------------------- Inches of snowfall for day
+SNWD --------------------------- Inches of snow on ground for day
+TMAX --------------------------- Max temperature for day
+AWND ---------------------------- Max wind speed for day
+
 
 ### Team details
 
-Team members: 
+Team members: Elizabeth Thomas, Stephen Levy, Luis Salazar
 
-Communication protocol: 
-
-### Machine learning model
-
-Basic description: 
- 
-### Database
-
-Basic description: 
-
-### Resource storage
-
-Google drive link: https://drive.google.com/drive/folders/1DuFgA18-lRqDunjGSs_41qk43USl-L3n?usp=sharing 
+Detailed workflow presentation:  Liz notes ---- this is a viewable link only, will move final power point to inside repo when done --- https://docs.google.com/presentation/d/1qctDydEv7GRGtydRg5J1TvznyKwuBSe0/edit?usp=sharing&ouid=100563763732377884738&rtpof=true&sd=true 
