@@ -1,12 +1,9 @@
 # Final project: 
 
-README.md must include:
-✓ Cohesive, structured outline of the project (this may include images, but should
-be easy to follow and digest)
-✓ Link to dashboard (or link to video of dashboard demo)
-✓ Link to Google Slides presentation 
+### Final visualization:
+Insert link to dashboard here.
 
-### Topic and data details
+### Topic and data details:
 Data source: https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations
 
 #### Reason for selected topic:
