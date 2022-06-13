@@ -19,7 +19,9 @@ This dataset contains detailed airline, weather, airport and employment informat
 
 #### Original columns:
 
-MONTH ------------------------- Month number (1-12 -- Jan. to Dec.)  <br />
+| Column         | Description            |
+|----------------|------------------------|
+|MONTH           |Month number (1-12 -- Jan. to Dec.) |
 DAY_OF_WEEK ------------------- Day of the week (1-7 -- Mon. to Fri.)  <br />
 DEP_DEL15 --------------------- Delayed over 15 min (binary - 1 = delay 0 = ontime) <br />
 DEP_TIME_BLK ------------------ Departure time block (59 min segment -- 0001 to 2359) <br />
