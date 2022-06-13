@@ -17,7 +17,20 @@ Travel delays are inevitable our team wants to look at airline travel data to se
 
 This dataset contains detailed airline, weather, airport and employment information for major airports in the US in 2019. 
 
-#### Original columns:
+#### File explained:
+.gitignore - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
+README.md - this is feeding this readme
+create_raw_dbases.ipynb - 
+create_writeto_db.ipynb - 
+db_join_script.txt - 
+delay_model.ipynb - 
+delay_model_fewrows.ipynb - 
+flight.txt - 
+flight_delay.ipynb - 
+
+
+
+#### Original data source columns:
 
 | Column         | Description            |
 |----------------|------------------------|
