@@ -1,7 +1,7 @@
 # Final project: 
 
 ### Final visualization:
-Insert link to dashboard here.
+
 https://public.tableau.com/views/Team3finalpresentation/StoryBoard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
 
 ### Topic and data details:
