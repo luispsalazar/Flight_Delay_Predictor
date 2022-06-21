@@ -4,11 +4,12 @@
 
 https://public.tableau.com/views/Team3finalpresentation/StoryBoard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
 
+Presentation: https://docs.google.com/presentation/d/1qctDydEv7GRGtydRg5J1TvznyKwuBSe0/edit?usp=sharing&ouid=100563763732377884738&rtpof=true&sd=true 
+
 ### Topic and data details:
 
 Data source: https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations
 
-Dashboard: https://public.tableau.com/shared/WGCPFJ4GC?:display_count=n&:origin=viz_share_link
 
 #### Reason for selected topic:
 
@@ -20,14 +21,18 @@ This dataset contains detailed airline, weather, airport and employment informat
 
 #### File explained:
 .gitignore - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
-README.md - this is feeding this readme
+LR_modelSPARK.ipynb - 
+README.md - read me
+RF_model.ipynb - 
+RF_model_fewrows.ipynb - 
+SVM_model.ipynb - 
 create_raw_dbases.ipynb - 
 create_writeto_db.ipynb - 
 db_join_script.txt - 
-delay_model.ipynb - 
-delay_model_fewrows.ipynb - 
+explo_clean_data_1.ipynb - 
+explo_clean_data_2.ipynb - 
+explo_clean_data_3hot.ipynb - 
 flight.txt - 
-flight_delay.ipynb - 
 
 
 
@@ -66,6 +71,3 @@ flight_delay.ipynb -
 ### Team details
 
 Team members: Elizabeth Thomas, Stephen Levy, Luis Salazar
-
-Detailed workflow presentation:  <br />
-Liz notes ---- this is a viewable link only, will move final power point to inside repo when done --- https://docs.google.com/presentation/d/1qctDydEv7GRGtydRg5J1TvznyKwuBSe0/edit?usp=sharing&ouid=100563763732377884738&rtpof=true&sd=true 
