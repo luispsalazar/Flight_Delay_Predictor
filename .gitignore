@@ -5,6 +5,9 @@ flightdelay_nolatlng.csv
 flightPGadmin.csv
 mergefiles.csv
 
+*.csv
+*.txt
+
 config.py
 
 .DS_Store
