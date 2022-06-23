@@ -1,5 +1,8 @@
 # Final project: 
 
+Descriptions
+
+
 ### Final visualization:
 
 https://public.tableau.com/views/Team3finalpresentation/StoryBoard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
@@ -29,9 +32,9 @@ SVM_model.ipynb -
 create_raw_dbases.ipynb - 
 create_writeto_db.ipynb - 
 db_join_script.txt - 
-explo_clean_data_1.ipynb - 
-explo_clean_data_2.ipynb - 
-explo_clean_data_3hot.ipynb - 
+explo_clean_data_1.ipynb - used to clean the data
+explo_clean_data_2.ipynb - used to clean the data
+explo_clean_data_3hot.ipynb - used to clean the data
 flight.txt - 
 
 
