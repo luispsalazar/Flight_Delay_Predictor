@@ -70,12 +70,14 @@ This dataset contains detailed airline, weather, airport and employment informat
 |TMAX | Max temperature for day 
 |AWND | Max wind speed for day 
 
+## ================================================================
+
 The original dataset has 25 feature (X) columns and 1 target (y) column. After calculating/adding the principal component column and dropping the Lat/Lng columns, the dataset contains 24 feature columns (21 numerical variables and 3 categorical variables) and 1 target column, before encoding the categorical variables. After encoding the DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT columns (categorical variables) the input dataset contain 153 feature columns and 1 target column.
 
 The cleaned, encoded dataset was then saved to table "clean_delaytable" in pgAdmin database "Flightdelay_data-1."
 The "clean_delaytable" contains 153 feature columns and 1 target column for each of the 6,489,062 rows. 
 
-This cleaned, encoded dataset is ready to be split into separate (X) and (y) datasets, with the (X) dataset being a compatible input for the Scaler() function.
+This cleaned, encoded dataset is ready to be split into separate (X) and (y) datasets, with the (X) dataset being a compatible input for the Scaler() function. Saving the cleaned, encoded scaled (X) dataset to pgAdmin is highly recommended.
 
 ### Team details
 
