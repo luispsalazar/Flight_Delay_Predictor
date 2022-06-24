@@ -1,12 +1,18 @@
+Screenshots.xlsx
 delay_clean.csv
-delay_clean_S2.csv
+delay_clean2K.csv
+delay_clean2K.txt
+delay_clean2K_SVM.txt
+delay_clean_SVM.txt
+flightPGadmin.csv
 flightdelay_data.csv
 flightdelay_nolatlng.csv
-flightPGadmin.csv
+for_test.csv
+for_test.txt
+for_test.xlsx
+for_test_SVM.txt
 mergefiles.csv
 
-*.csv
-*.txt
 
 config.py
 
