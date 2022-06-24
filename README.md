@@ -23,19 +23,19 @@ Travel delays are inevitable our team wants to look at airline travel data to se
 This dataset contains detailed airline, weather, airport and employment information for major airports in the US in 2019. 
 
 #### File explained:
-.gitignore - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
-LR_modelSPARK.ipynb - 
-README.md - read me
-RF_model.ipynb - 
-RF_model_fewrows.ipynb - 
-SVM_model.ipynb - 
-create_raw_dbases.ipynb - 
-create_writeto_db.ipynb - 
-db_join_script.txt - 
-explo_clean_data_1.ipynb - used to clean the data
-explo_clean_data_2.ipynb - used to clean the data
-explo_clean_data_3hot.ipynb - used to clean the data
-flight.txt - 
+<br /> .gitignore - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
+<br /> LR_modelSPARK.ipynb - 
+<br /> README.md - read me
+<br /> RF_model.ipynb - 
+<br /> RF_model_fewrows.ipynb - 
+<br /> SVM_model.ipynb - 
+<br /> create_raw_dbases.ipynb - 
+<br /> create_writeto_db.ipynb - 
+<br /> db_join_script.txt - 
+<br /> explo_clean_data_1.ipynb - used to clean the data
+<br /> explo_clean_data_2.ipynb - used to clean the data
+<br /> explo_clean_data_3hot.ipynb - used to clean the data
+<br /> flight.txt - 
 
 
 
