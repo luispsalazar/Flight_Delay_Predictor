@@ -77,7 +77,7 @@ The original dataset has 25 feature (X) columns and 1 target (y) column. After c
 The cleaned, encoded dataset was then saved to table "clean_delaytable" in pgAdmin database "Flightdelay_data-1."
 The "clean_delaytable" contains 153 feature columns and 1 target column for each of the 6,489,062 rows. 
 
-This cleaned, encoded dataset is ready to be split into separate (X) and (y) datasets, with the (X) dataset being a compatible input for the Scaler() function. Saving the scaled (X) dataset to pgAdmin is recommended.
+This cleaned, encoded dataset is ready to be split into separate (X) and (y) datasets, with the (X) dataset being a compatible input for the Scaler() function. Saving the scaled (X) dataset to pgAdmin is highly recommended.
 
 ### Team details
 
