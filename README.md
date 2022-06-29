@@ -78,6 +78,13 @@ The "clean_delaytable" contains 153 feature columns and 1 target column for each
 
 This cleaned, encoded dataset is ready to be split into separate (X) and (y) datasets, with the (X) dataset being a compatible input for the Scaler() function.
 
+### Analysis details
+
+When our model ran the following -------------
+
+![Alt text](Image URL)
+
+
 ### Team details
 
 Team members: Elizabeth Thomas, Stephen Levy, Luis Salazar
