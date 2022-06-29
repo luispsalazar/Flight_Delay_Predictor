@@ -82,9 +82,15 @@ This cleaned, encoded dataset is ready to be split into separate (X) and (y) dat
 
 ### Analysis details
 
-When our model ran the following -------------
+When our model ran the following pattern of feature importance:
 
-![Alt text](Image URL)
+#### Random forest Model
+
+![RandomForest](https://github.com/ethomas33/Team_3_Final_Project/blob/ecf1bc2589599bfed36c4da24a25163c6c1e0c8a/Images/Feature_Importance_%20Random_Forest.png)
+
+#### Gradient-boosted algorithm
+
+![RandomForest](https://github.com/ethomas33/Team_3_Final_Project/blob/ecf1bc2589599bfed36c4da24a25163c6c1e0c8a/Images/Feature_Importance_Gradient-boosted_algorithm.png)
 
 
 ### Team details
