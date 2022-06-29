@@ -6,9 +6,11 @@ Travel delays are inevitable, our team wanted to look at airline travel data to 
 
 ### Final visualization:
 
-https://public.tableau.com/views/Team3finalpresentation/StoryBoard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
+Data visualization: https://public.tableau.com/views/Team3finalpresentation/StoryBoard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
 
 Presentation: https://docs.google.com/presentation/d/1qctDydEv7GRGtydRg5J1TvznyKwuBSe0/edit?usp=sharing&ouid=100563763732377884738&rtpof=true&sd=true 
+
+Stakeholder presentation: INSERT LINK HERE!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Topic and data details:
 
