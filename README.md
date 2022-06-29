@@ -1,6 +1,7 @@
 # Final project: 
 
-Descriptions 
+Travel delays are inevitable, our team wanted to look at airline travel data to see how weather and other factors influence airline delays (a flight delay is defined when it departs more than 15 minutes after the scheduled time and excludes cancellations). Predicting when delays might occur was done using a trained machine learning model in Google Colab and then visualized using Tableau. 
+
 
 
 ### Final visualization:
