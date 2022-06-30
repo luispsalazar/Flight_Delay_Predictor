@@ -1,3 +1,4 @@
+from tracemalloc import stop
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -12,12 +13,18 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import OneHotEncoder
 
-#############################################
-# WARNING, FILE "mergefiles.csv" IS 1.37 GB #
-#############################################
 
-delay_data = pd.read_csv('Resources/mergefiles.csv', encoding = 'utf-8')
+# Remove nrows when ready for full dataset
+# Remove 2K from name in last block for complete file
+# WARNING, FILE "mergefiles.csv" IS 1.37 GB
+
+delay_data = pd.read_csv('Resources/for_test.csv', encoding = 'utf-8')
+
+#delay_data = pd.read_csv('mergefiles.csv', encoding = 'utf-8')
 delay = pd.DataFrame(delay_data)
+delay.head()
+
+stop
 
 # 1. Data Exploration
 # Data type
@@ -237,5 +244,5 @@ for i in delay_withPCA.columns:
     print(i)
 
 # Save cleaned data as a new csv file
-#      IF NEWNAME, ADD to GITIGNORE!!!!!
-delay_withPCA.to_csv('Resources/delay_clean.csv', index = False)
+#      ADD NEWNAME to GITIGNORE!!!!!
+delay_withPCA.to_csv("./Resources/delay_clean.csv", index = False)
