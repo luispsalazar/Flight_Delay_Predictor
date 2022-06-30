@@ -12,6 +12,7 @@ os.environ["SPARK_HOME"] = "/content/spark-3.1.1-bin-hadoop3.2"
 
 import findspark
 findspark.init()
+
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 spark.conf.set("spark.sql.repl.eagerEval.enabled", True)
@@ -19,24 +20,21 @@ spark
 
 import sklearn
 from sklearn.metrics import classification_report, confusion_matrix
-
 from pyspark.ml import Pipeline
 from pyspark.ml.classification import GBTClassifier
 from pyspark.ml.feature import StringIndexer, VectorIndexer
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
-"""## WARNING, FILE "delay_clean_SVM.txt" is > 1.2 GB  --  added to gitignore"""
+# WARNING, FILE "delay_clean_SVM.txt" is > 1.2 GB  --  added to gitignore
 
 # Load and parse the data file, converting it to a DataFrame
 clean = spark.read.format("libsvm").load('/content/drive/MyDrive/Colab_Notebooks/delay_clean_SVM.txt')
 clean.show(5)
-
 clean.printSchema()
 
 # Number of rows in dataset
 number_rows = clean.count()
 number_rows
-
 clean.groupBy('label').count().show()
 
 # Index labels, adding metadata to the label column
@@ -48,20 +46,16 @@ labelIndexer = StringIndexer(inputCol = "label", outputCol = "indexedLabel").fit
 featureIndexer = VectorIndexer(inputCol = "features", outputCol = "indexedFeatures", maxCategories = 4).fit(clean)
 
 from pyspark.ml.feature import Normalizer
-
 normalizer = Normalizer(inputCol = "features", outputCol = "normFeatures", p = 1.0)
 NormOutput = normalizer.transform(clean)
 
 # Split the data into training and test sets
 (trainingData, testData) = clean.randomSplit([0.7, 0.3])
-
 trainingData.show(5)
-
 testData.show(5)
 
-"""## Oversampling performed to dataset
-### https://medium.com/@junwan01/oversampling-and-undersampling-with-pyspark-5dbc25cdf253
-"""
+# Oversampling performed to dataset
+# https://medium.com/@junwan01/oversampling-and-undersampling-with-pyspark-5dbc25cdf253
 
 from pyspark.sql.functions import col, explode, array, lit
 
@@ -69,7 +63,6 @@ major_df = clean.filter(col("label") == 0)
 minor_df = clean.filter(col("label") == 1)
 ratio = int(major_df.count()/minor_df.count())
 print("Ratio of original dataset: {}".format(ratio)+" to 1 (on time : delayed flights)")
-
 a = range(ratio)
 
 # duplicate the minority rows
@@ -78,18 +71,14 @@ oversampled_df = minor_df.withColumn("dummy", explode(array([lit(x) for x in a])
 # combine both oversampled minority rows and previous majority rows
 combined_df = major_df.unionAll(oversampled_df)
 combined_df.show()
-
 combined_df.groupBy('label').count().show()
 
 # Split the data into training and test sets
 (trainingData, testData) = combined_df.randomSplit([0.7, 0.3])
-
 trainingData.show(5)
-
 testData.show()
 
-"""# Gradient-boosted tree classifier (GBT)"""
-
+# Gradient-boosted tree classifier (GBT)
 # Train a GBT model
 gbt = GBTClassifier(labelCol = "indexedLabel", featuresCol = "indexedFeatures", maxIter = 30, maxDepth = 10,
                     stepSize = 1)
@@ -117,7 +106,7 @@ print("Accuracy = %g" % accuracy)
 print("Test Error = %g" % (1.0 - accuracy))
 
 gbtModel = model.stages[2]
-print(gbtModel)  # summary only
+print(gbtModel)
 
 y_true = predictions.select(['indexedLabel']).collect()
 y_pred = predictions.select(['prediction']).collect()
@@ -134,11 +123,10 @@ plt. bar(x = range (len (importanceSummary)), height = importanceSummary)
 plt.show()
 
 # Saving trained model
-model_path = "./drive/" + "./MyDrive/" + "./SavedModels/" + "GBTmodel"
-model.write().overwrite().save(model_path)
+#model_path = "./drive/" + "./MyDrive/" + "./SavedModels/" + "GBTmodel"
+#model.write().overwrite().save(model_path)
 
-"""# Random forest classifier (RFC)"""
-
+# Random forest classifier (RFC)
 from pyspark.ml.classification import RandomForestClassifier
 from pyspark.ml.feature import IndexToString
 
@@ -172,8 +160,7 @@ print("Accuracy = %g" % accuracy)
 print("Test Error = %g" % (1.0 - accuracy))
 
 rfModel = model.stages[2]
-print(rfModel)  # summary only
-
+print(rfModel)
 print(rfModel.featureImportances)
 
 from matplotlib import pyplot as plt
@@ -188,11 +175,10 @@ print(confusion_matrix(y_true, y_pred))
 print(classification_report(y_true, y_pred))
 
 # Saving trained model
-model_path = "./drive/" + "./MyDrive/" + "./SavedModels/" + "RFmodel"
-model.write().overwrite().save(model_path)
+#model_path = "./drive/" + "./MyDrive/" + "./SavedModels/" + "RFmodel"
+#model.write().overwrite().save(model_path)
 
-"""# Factorization machines classifier"""
-
+# Factorization machines classifier
 from pyspark.ml.classification import FMClassifier
 from pyspark.ml.feature import MinMaxScaler
 
@@ -213,13 +199,9 @@ fm = FMClassifier(labelCol = "indexedLabel", featuresCol = "scaledFeatures", ste
 pipeline = Pipeline(stages=[labelIndexer, featureScaler, fm])
 
 # Train model
+start_time = time.time()
 model = pipeline.fit(trainingData)
-
-# Make predictions
-predictions2 = model.transform(testData)
-
-# Select example rows to display
-predictions2.select("prediction", "indexedLabel", "features").show(5)
+print("Training Time: %s seconds" % (str(time.time() - start_time)))
 
 # Select (prediction, true label) and compute test accuracy
 evaluator = MulticlassClassificationEvaluator(
@@ -235,5 +217,5 @@ print(confusion_matrix(y_true, y_pred))
 
 print(classification_report(y_true, y_pred))
 
-model_path = "./hdfsData/" + "FMmodel"
-model.write().overwrite().save(model_path)
+#model_path = "./drive/" + "./MyDrive/" + "./SavedModels/" + "FMmodel"
+#model.write().overwrite().save(model_path)
