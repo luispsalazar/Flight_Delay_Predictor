@@ -25,6 +25,11 @@ Travel delays are inevitable our team wants to look at airline travel data to se
 
 This dataset contains detailed airline, weather, airport and employment information for major airports in the US in 2019. 
 
+#### General project workflow:
+
+![Workflow Diagram]( )
+
+
 #### File explained:
 
 <br /> **Supporting resources and presentation** - this folder contains images feeding the read me, presentations related to this project, and exported results as excel files
