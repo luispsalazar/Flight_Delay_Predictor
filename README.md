@@ -27,7 +27,7 @@ This dataset contains detailed airline, weather, airport and employment informat
 
 #### General project workflow:
 
-![Workflow Diagram]( )
+![Workflow Diagram](https://github.com/ethomas33/Team_3_Final_Project/blob/873b695064ac2036b640e8dfe104f6786ecb917e/Supporting%20resources%20and%20presentation/Workflow%20diagram.png)
 
 
 #### File explained:
