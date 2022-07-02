@@ -92,7 +92,7 @@ When our model ran the following pattern of feature importance:
 
 #### Random forest Model
 
-![RandomForest](https://github.com/ethomas33/Team_3_Final_Project/blob/ecf1bc2589599bfed36c4da24a25163c6c1e0c8a/Images/Feature_Importance_%20Random_Forest.png)
+![RandomForest](https://github.com/ethomas33/Team_3_Final_Project/blob/f12a9c3a575051f336628d2ef1730468d8cce06f/Supporting%20resources%20and%20presentation/Feature_Importance_%20Random_Forest.png)
 
 #### Gradient-boosted algorithm
 
