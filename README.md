@@ -27,7 +27,7 @@ This dataset contains detailed airline, weather, airport and employment informat
 
 #### File explained:
 
-<br /> **Images** - this folder contains images feeding the read me 
+<br /> **Supporting resources and presentation** - this folder contains images feeding the read me, presentations related to this project, and exported results as excel files
 <br /> **Misc_files** - this folder contains old version of files, test files, and files that were not successful
 <br /> **SavedModels** - this folder contains the models used for this project
 <br /> **.gitignore** - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
@@ -47,7 +47,7 @@ This dataset contains detailed airline, weather, airport and employment informat
 <br /> **requirements.txt** - this contains the required list of libraries for python environment 
 
 
-#### Original data source columns:
+#### Original data source:
 
 | Column         | Description            |
 |----------------|------------------------|
@@ -78,7 +78,6 @@ This dataset contains detailed airline, weather, airport and employment informat
 |TMAX | Max temperature for day 
 |AWND | Max wind speed for day 
 
-## ================================================================
 
 The original dataset has 25 feature (X) columns and 1 target (y) column. After calculating/adding the principal component column and dropping the Lat/Lng columns, the dataset contains 24 feature columns (21 numerical variables and 3 categorical variables) and 1 target column, before encoding the categorical variables. After encoding the DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT columns (categorical variables) the input dataset contain 153 feature columns and 1 target column.
 
