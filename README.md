@@ -37,9 +37,7 @@ This dataset contains detailed airline, weather, airport and employment informat
 <br /> **Models_in_SPARK_R4.ipynb** - this notebook trains the machine learning models
 <br /> **PredWithTrainedModel.ipynb** - this notebook uses new data to predict based on trained model
 <br /> **README.md** - read me
-<br /> **cleandelay_writeto_db.ipynb** - 
-<br /> **create_raw_dbases.ipynb** - 
-<br /> **create_writeto_db.ipynb** - 
+<br /> **cleandelay_writeto_db.ipynb** - writing original data to database, in this file a data frame was used to pull out lat long columns to write two separate tables to PGAdmin
 <br /> **explo_clean_data_3hot.ipynb** - this notebook cleans and encodes the raw data to be used in model
 <br /> **explo_clean_data_3hot.py** - this is the notebook converted to a python file
 <br /> **models_in_spark_r4.py** - this is the notebook converted to a python file
