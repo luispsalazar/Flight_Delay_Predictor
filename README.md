@@ -32,19 +32,19 @@ This dataset contains detailed airline, weather, airport and employment informat
 <br /> **SavedModels** - this folder contains the models used for this project
 <br /> **.gitignore** - this is being used to stop the upload of the source data file as it is 1.4 gb csv file
 <br /> **CSV_To_JSON.ipynb** - this notebook was used to convert the original csv data to a json format
-<br /> **ConvertCSVtoLIBSV.ipynb** - 
+<br /> **ConvertCSVtoLIBSV.ipynb** - this notebook converts csv to spark vector file
 <br /> **ConvertCSVtoLIBSV.py** - this is the notebook converted to a python file
-<br /> **Models_in_SPARK_R4.ipynb** - 
-<br /> **PredWithTrainedModel.ipynb** - 
+<br /> **Models_in_SPARK_R4.ipynb** - this notebook trains the machine learning models
+<br /> **PredWithTrainedModel.ipynb** - this notebook uses new data to predict based on trained model
 <br /> **README.md** - read me
 <br /> **cleandelay_writeto_db.ipynb** - 
 <br /> **create_raw_dbases.ipynb** - 
 <br /> **create_writeto_db.ipynb** - 
-<br /> **explo_clean_data_3hot.ipynb** - 
-<br /> **explo_clean_data_3hot.py** - 
-<br /> **models_in_spark_r4.py** - 
-<br /> **predwithtrainedmodel.py** - 
-<br /> **requirements.txt** - this contains the required list of libraries for python environment 
+<br /> **explo_clean_data_3hot.ipynb** - this notebook cleans and encodes the raw data to be used in model
+<br /> **explo_clean_data_3hot.py** - this is the notebook converted to a python file
+<br /> **models_in_spark_r4.py** - this is the notebook converted to a python file
+<br /> **predwithtrainedmodel.py** - this is the notebook converted to a python file
+<br /> **requirements.txt** - this contains the required list of libraries for python environment (please note this currently contains more libraries than needed) 
 
 
 #### Original data source:
